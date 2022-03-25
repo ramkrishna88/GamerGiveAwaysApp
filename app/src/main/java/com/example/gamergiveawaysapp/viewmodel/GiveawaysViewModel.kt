@@ -6,7 +6,6 @@ import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
 import com.example.gamergiveawaysapp.database.DatabaseRepository
-import com.example.gamergiveawaysapp.model.Giveaways
 import com.example.gamergiveawaysapp.network.GiveawaysRepository
 import com.example.gamergiveawaysapp.utils.GiveawayState
 import com.example.gamergiveawaysapp.utils.PlatformType
@@ -20,7 +19,7 @@ class GiveawaysViewModel(
 ) : ViewModel() {
 
     init {
-        Log.d("GiveawaysViewModel", "VIEWMODEL initialized")
+        Log.d("GiveawaysViewModel", "REMODEL initialized")
     }
 
     var platform: PlatformType = PlatformType.ANDROID
@@ -81,6 +80,6 @@ class GiveawaysViewModel(
 
     override fun onCleared() {
         super.onCleared()
-        Log.d("GiveawaysViewModel", "VIEWMODEL destroyed")
+        Log.d("GiveawaysViewModel", "REMODEL destroyed")
     }
 }
